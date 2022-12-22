@@ -8,7 +8,7 @@ add_executable(${PROJECT_NAME} src/main.cpp)
 
 set(WINDOW_NAME "First OpenGL Example")
 set(WINDOW_WIDTH 1600)
-set(WINDOW_HIGHT 900)
+set(WINDOW_HEIGHT 900)
 
 include(CPM.cmake)
 CPMAddPackage("gh:gabime/spdlog#v1.x")
@@ -42,5 +42,5 @@ target_compile_definitions(${PROJECT_NAME}
 # ABC = EFG 처럼 띄어쓰기 하지말것 ABC=EFG로 작성
   PUBLIC WINDOW_NAME="${WINDOW_NAME}"
   PUBLIC WINDOW_WIDTH=${WINDOW_WIDTH}
-  PUBLIC WINDOW_HIGHT=${WINDOW_HIGHT}
+  PUBLIC WINDOW_HEIGHT=${WINDOW_HEIGHT}
 )
